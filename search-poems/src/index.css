@@ -1,0 +1,67 @@
+body {
+  margin: 0;
+  box-sizing: border-box;
+  background-color: rgb(145,182,195);
+  font-family: 'Kaiti', 'SimHei', 'Hiragino Sans GB ', 'helvetica neue';
+  font-size: 20px;
+  font-weight: 200;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+.search-form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  max-width: 700px;
+  margin: 0 auto;
+}
+.search {
+  position: relative;
+  top: 10px;
+  left: 10px;
+  width: 120%;
+  margin: 0;
+  padding: 20px;
+  border: 10px solid #f7f7f7;
+  border-radius: 5px;
+  outline: none;
+  box-shadow: 0 0 5px rgba(0,0,0,0.12),
+  inset 0 0 2px rgba(0,0,0,0.19);
+  text-align: center;
+  font-size: 40px;
+  font-family: 'Kaiti', 'helvetica neue';
+}
+.suggestions {
+  position: relative;
+  top: 7px;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  list-style: none;
+}
+.suggestions li {
+  margin: 0;
+  padding: 20px;
+  border-bottom: 1px solid #d8d8d8;
+  background: #fff;
+  box-shadow: 0 0 10px rgba(0,0,0,0.14);
+}
+.suggestions li:nth-child(even) {
+  transform: perspective(100px) rotateX(3deg) translateY(2px) scale(1.001);
+  background: linear-gradient(#fff, #efefef);
+}
+.suggestions li:nth-child(odd) {
+  transform: perspective(100px) rotateX(-3deg) translateY(3px);
+  background: linear-gradient(to top, #fff, #efefef);
+}
+span.title {
+  margin-top: 5px;
+  margin-right: 20px;
+  text-align: right;
+  color: #7c8e94;
+}
+span.hl {
+  color: #008000;
+}

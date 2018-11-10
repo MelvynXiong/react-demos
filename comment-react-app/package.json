@@ -1,0 +1,84 @@
+{
+  "name": "comment-react-app",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "prop-types": "^15.6.2",
+    "react": "^16.5.2",
+    "react-dom": "^16.5.2",
+    "react-redux": "^5.0.7",
+    "react-scripts": "1.1.5",
+    "redux": "^4.0.0"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject"
+  },
+  "devDependencies": {
+    "babel-loader": "^8.0.4",
+    "eslint": "^5.6.1",
+    "eslint-config-airbnb": "^17.1.0",
+    "eslint-plugin-import": "^2.14.0",
+    "eslint-plugin-jsx-a11y": "^6.1.1",
+    "eslint-plugin-react": "^7.11.1"
+  },
+  "eslintConfig": {
+    "rules": {
+      "import/no-extraneous-dependencies": "off",
+      "import/prefer-default-export": "off",
+      "import/no-unresolved": "off",
+      "import/extensions": "off",
+      "class-methods-use-this": "off",
+      "no-nested-ternary": "off",
+      "global-require": "off",
+      "prettier/prettier": "error",
+      "no-console": "error",
+      "react/prop-types": "off",
+      "prefer-destructuring": [
+        "error",
+        {
+          "VariableDeclarator": {
+            "array": false,
+            "object": true
+          },
+          "AssignmentExpression": {
+            "array": false,
+            "object": false
+          }
+        }
+      ],
+      "no-unused-expressions": [
+        "error",
+        {
+          "allowShortCircuit": true
+        }
+      ],
+      "no-underscore-dangle": [
+        "error",
+        {
+          "allowAfterThis": true
+        }
+      ],
+      "no-param-reassign": [
+        "error",
+        {
+          "props": false
+        }
+      ],
+      "no-return-assign": [
+        "error",
+        "except-parens"
+      ],
+      "no-cond-assign": [
+        "error",
+        "except-parens"
+      ],
+      "radix": [
+        "error",
+        "as-needed"
+      ]
+    }
+  }
+}
